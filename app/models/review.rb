@@ -1,4 +1,12 @@
 class Review
-  
-end
 
+  attr_accessor :customer, :restaurant, :review
+
+  def initialize(review)
+    @reviews = []
+    @review = review
+    customer.add_review(self)
+  end
+
+
+end
